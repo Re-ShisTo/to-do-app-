@@ -1,11 +1,15 @@
 import { useState } from "react";
 
-export default function Todo({ todo }) {
+export default function Todo({ todo, onChangeTodo, onDeleteTodo }) {
   const [isEditing, setisEditing] = useState(false);
 
   const todoContent = isEditing ? (
     <>
-      <input type="text" value={todo.title} />
+      <input
+        type="text"
+        value={todo.title}
+        onChange={(e) => onChangeTodo({ ...todo, title: e.target.value })}
+      />
       <button onClick={() => setisEditing(false)}>save</button>
     </>
   ) : (
@@ -17,9 +21,12 @@ export default function Todo({ todo }) {
 
   return (
     <>
-      <input type="checkbox" />
+      <input
+        type="checkbox"
+        onChange={(e) => onChangeTodo({ ...todo, done: e.target.checked })}
+      />
       {todoContent}
-      <button>Delete</button>
+      <button onClick={() => onDeleteTodo(todo.id)}>Delete</button>
     </>
   );
 }
