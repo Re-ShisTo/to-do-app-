@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useTodoContext } from "../contexts/useTodoContext";
 
-export default function Todo({ todo, onChangeTodo, onDeleteTodo }) {
+export default function Todo({ todo }) {
   const [isEditing, setisEditing] = useState(false);
+  const { onChangeTodo, onDeleteTodo } = useTodoContext();
 
   const todoContent = isEditing ? (
     <>

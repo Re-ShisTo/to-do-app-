@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useTodoContext } from "../contexts/useTodoContext";
 
-export default function AddTodo({ onAddTodo, onChangeTodo, onDeleteTodo }) {
+export default function AddTodo() {
   const [title, setTitle] = useState("");
+  const { onAddTodo } = useTodoContext();
 
   return (
     <section>

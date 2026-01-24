@@ -8,6 +8,6 @@
 
 - Implemented "Lifting State Up" strategy for passing props to more components
 
-- Impemented useReducer for increasing readability and use less code
+- Implemented useImmerReducer library of useReducer for increasing readability and use less code
 
-- Used Context api For Global data management
+- In later commits Used Context api For avoiding prop drilling

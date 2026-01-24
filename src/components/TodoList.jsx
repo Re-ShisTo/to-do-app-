@@ -1,18 +1,14 @@
 import Todo from "./Todo";
+import TodoContext from "../contexts/todoContext";
+import { useTodoContext } from "../contexts/useTodoContext";
 
-export default function TodoList({ todos, onChangeTodo, onDeleteTodo }) {
+export default function TodoList() {
+  const { todos } = useTodoContext();
+
   return (
     <ul>
       {todos.map((todo) => (
-        <li key={todo.id}>
-          {
-            <Todo
-              todo={todo}
-              onChangeTodo={onChangeTodo}
-              onDeleteTodo={onDeleteTodo}
-            />
-          }
-        </li>
+        <li key={todo.id}>{<Todo todo={todo} />}</li>
       ))}
     </ul>
   );
