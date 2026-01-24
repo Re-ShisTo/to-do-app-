@@ -1,5 +1,4 @@
 import Todo from "./Todo";
-import TodoContext from "../contexts/todoContext";
 import { useTodoContext } from "../contexts/useTodoContext";
 
 export default function TodoList() {

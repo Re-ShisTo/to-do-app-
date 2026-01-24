@@ -1,7 +1,7 @@
 import { useImmerReducer } from "use-immer";
 import intialTodos from "../data/data";
 import todosReducer from "../reducer/todosReducer";
-import TodoContext from "../contexts/todoContext";
+import TodoContext from "../contexts/TodoContext";
 
 export default function ContextProvider({ children }) {
   const [todos, dispatch] = useImmerReducer(todosReducer, intialTodos);
