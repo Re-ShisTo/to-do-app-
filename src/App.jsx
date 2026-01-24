@@ -1,6 +1,6 @@
 import AddTodo from "./components/AddTodo";
 import TodoList from "./components/TodoList";
-import ContextProvider from "./provider/contextProvider";
+import ContextProvider from "./provider/ContextProvider";
 
 const App = () => {
   return (
