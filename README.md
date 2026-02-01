@@ -1,16 +1,18 @@
 ### To Do List App [Live Link](https://to-do-app-seven-navy.vercel.app/)
 
-## Purpose: To practice useState, Context Api, useReducer
+## Purpose: To practice useState, Context Api, useReducer.
 
-- Used useState for State management
+# Main git branch:
 
-- Used onChange handler for inputs
+- Used [useState]() for State management.
 
-- Implemented "Lifting State Up" strategy for passing props to more components
+- Used [onChange]() handler for inputs.
 
-- Implemented useImmerReducer library of useReducer for increasing readability and use less code
+- Implemented "Lifting State Up" strategy for passing props to more components.
 
-- In later commits Used Context api For avoiding prop drilling
+- Implemented [useImmerReducer]() library of [useReducer]() for increasing readability and use less code.
+
+- In later commits Used [Context]() api For avoiding prop drilling.
 
 ### In this project instead of focusing on UI, my primary focus was on building a strong and scalable React architecture.
 
