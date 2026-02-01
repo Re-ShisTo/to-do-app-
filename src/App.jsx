@@ -1,16 +1,14 @@
-import AddTodo from "./components/AddTodo";
-import TodoList from "./components/TodoList";
-import ContextProvider from "./provider/ContextProvider";
+import { useState } from "react";
 
 const App = () => {
+  const [todoTitle, setTodoTitle] = useState("");
+  const [todoList, setTodoList] = useState([]);
+
   return (
-    <main>
-      <h1>Simple To Do App</h1>
-      <ContextProvider>
-        <AddTodo />
-        <TodoList />
-      </ContextProvider>
-    </main>
+    <form action="">
+      <input type="text" />
+      <button>Create Todo</button>
+    </form>
   );
 };
 
