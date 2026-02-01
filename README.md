@@ -1,8 +1,8 @@
-### To Do List App [Live Link](https://to-do-app-seven-navy.vercel.app/)
+# To Do List App [Live Link](https://to-do-app-seven-navy.vercel.app/)
 
 ## Purpose: To practice useState, Context Api, useReducer.
 
-# Main git branch:
+### Main git branch:
 
 - Used [useState]() for State management.
 
