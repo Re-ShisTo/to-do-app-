@@ -14,11 +14,6 @@
       "id": "3",
       "title": "Learn CSS",
       "isComplete": false
-    },
-    {
-      "id": "4",
-      "title": "Learn React",
-      "isComplete": false
     }
   ]
 }
