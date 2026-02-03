@@ -1,9 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const App = () => {
   const [todoTitle, setTodoTitle] = useState("");
   const [todoList, setTodoList] = useState([]);
   const [currentFilter, setCurrentFilter] = useState("all");
+
+  const inputRef = useRef(null);
 
   const getAllTodos = async () => {
     const API = `http://localhost:3000/todo`;
@@ -21,6 +23,7 @@ const App = () => {
   };
 
   useEffect(() => {
+    inputRef.current.focus();
     // eslint-disable-next-line react-hooks/set-state-in-effect
     getAllTodos();
   }, [currentFilter]);
@@ -77,6 +80,7 @@ const App = () => {
         <input
           type="text"
           value={todoTitle}
+          ref={inputRef}
           onChange={(e) => setTodoTitle(e.target.value)}
           placeholder="Enter Your Todo"
           className="flex-1 px-2 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"

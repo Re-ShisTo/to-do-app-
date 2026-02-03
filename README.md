@@ -4,4 +4,8 @@
 
 ### Secondary git branch:
 
-- Used fetch api methods [POST](), [PATCH](), and [DELETE]() to alter datas in db.json.
+- Used json-server for mock API.
+
+- Used fetch api methods [POST](), [PATCH](), and [DELETE]() to alter data in db.json.
+
+- Learned and implemented [useRef]()
