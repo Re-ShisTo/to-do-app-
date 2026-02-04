@@ -1,4 +1,4 @@
-# To Do List App [Live Link](https://to-do-app-seven-navy.vercel.app/)
+# To Do List App
 
 ## Purpose: To practice useRef and build a CRUD project using json-server.
 
@@ -6,6 +6,6 @@
 
 - Used json-server for mock API.
 
-- Used fetch api methods [POST](), [PATCH](), and [DELETE]() to alter data in db.json.
+- Used fetch api methods `POST`, `PATCH`, and `DELETE` to alter data in `db.json`.
 
-- Learned and implemented [useRef]()
+- Learned and implemented `useRef`
